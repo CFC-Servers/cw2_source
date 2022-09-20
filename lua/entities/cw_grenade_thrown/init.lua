@@ -46,7 +46,7 @@ function ENT:PhysicsCollide(data, physobj)
 		CT = CurTime()
 		
 		if CT > self.NextImpact then
-			self:EmitSound("weapons/hegrenade/he_bounce-1.wav", 75, 100)
+			self:EmitSound("weapons/hegrenade/he_bounce-1.mp3", 75, 100)
 			self.NextImpact = CT + 0.1
 		end
 	end

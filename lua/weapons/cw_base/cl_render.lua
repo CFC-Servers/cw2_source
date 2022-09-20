@@ -97,13 +97,13 @@ end
 function SWEP:_changeTelescopicsFOVIndex(bind)
 	if bind == self.magnificationIncreaseButton then
 		if self:changeTelescopicsFOVIndex(1) then
-			surface.PlaySound("cw/switch3.wav")
+			surface.PlaySound("cw/switch3.mp3")
 		end
 		
 		return true
 	elseif bind == self.magnificationDecreaseButton then
 		if self:changeTelescopicsFOVIndex(-1) then
-			surface.PlaySound("cw/switch1.wav")
+			surface.PlaySound("cw/switch1.mp3")
 		end
 		
 		return true

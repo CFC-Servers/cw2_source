@@ -376,7 +376,7 @@ if CLIENT then
 					local norm = bulletData.direction:GetNormal()
 
 					if bulletData.player ~= localPlayer and norm:DotProduct(eyeAngles:GetNormalized()) < 0 and CT > bulletWhizTime and bulletData.position:Distance(playerPos) <= self.WHIZ_DISTANCE then -- emit a whiz sound
-						EmitSound("weapons/fx/nearmiss/bulletLtoR0" .. math.random(3, 9) .. ".wav", pos, ply:EntIndex(), CHAN_AUTO, 1, 70, 0, 100)
+						EmitSound("weapons/fx/nearmiss/bulletLtoR0" .. math.random(3, 9) .. ".mp3", pos, ply:EntIndex(), CHAN_AUTO, 1, 70, 0, 100)
 						bulletWhizTime = CT + self.WHIZ_EVERY
 					end
 					

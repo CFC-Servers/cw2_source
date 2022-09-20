@@ -78,7 +78,7 @@ function ENT:Use(activator, caller)
 								-- if it's greater than 0, give it to the player
 								if amountToGive > 0 then
 									activator:SetAmmo(math.Clamp(ammo + amountToGive, 0, wep.Primary.ClipSize_Orig * self.ResupplyMultiplier), wep.Primary.Ammo)
-									activator:EmitSound("items/ammo_pickup.wav", 60, 100)
+									activator:EmitSound("items/ammo_pickup.mp3", 60, 100)
 									self.dt.ammoCharge = self.dt.ammoCharge - 1
 								end
 							end

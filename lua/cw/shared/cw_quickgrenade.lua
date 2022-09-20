@@ -176,7 +176,7 @@ function CustomizableWeaponry.quickGrenade:throw()
 			end)
 			
 			CustomizableWeaponry.actionSequence.new(self, 0.5, nil, function()
-				surface.PlaySound("weapons/pinpull.wav")
+				surface.PlaySound("weapons/pinpull.mp3")
 			end)
 			
 			CustomizableWeaponry.actionSequence.new(self, 1.1, nil, function()

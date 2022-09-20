@@ -49,7 +49,7 @@ function CustomizableWeaponry.colorableParts:cycleColor(data)
 	self.SightColorTarget = nil
 	
 	if CustomizableWeaponry.playSoundsOnInteract then
-		surface.PlaySound("cw/selector.wav")
+		surface.PlaySound("cw/selector.mp3")
 	end
 end
 

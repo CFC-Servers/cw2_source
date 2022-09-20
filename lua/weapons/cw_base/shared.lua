@@ -2004,7 +2004,7 @@ if CLIENT then
 					wep.CheckTime = CurTime() + 2
 					
 					if ply == LocalPlayer() then
-						ply:EmitSound("weapons/smg1/switch_single.wav", 70, math.random(92, 112))
+						ply:EmitSound("weapons/smg1/switch_single.mp3", 70, math.random(92, 112))
 					end
 				end
 			end

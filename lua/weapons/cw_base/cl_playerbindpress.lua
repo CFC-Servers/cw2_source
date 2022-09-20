@@ -30,7 +30,7 @@ function SWEP.PlayerBindPress(ply, b, p)
 							if CT > wep.ZoomWait then
 								if wep.ZoomAmount > wep.MinZoom then
 									wep.ZoomAmount = math.Clamp(wep.ZoomAmount - 15, wep.MinZoom, wep.MaxZoom)
-									surface.PlaySound("weapons/zoom.wav")
+									surface.PlaySound("weapons/zoom.mp3")
 									wep.ZoomWait = CT + 0.15
 								end
 							end
@@ -42,7 +42,7 @@ function SWEP.PlayerBindPress(ply, b, p)
 							if CT > wep.ZoomWait then
 								if wep.ZoomAmount < wep.MaxZoom then
 									wep.ZoomAmount = math.Clamp(wep.ZoomAmount + 15, wep.MinZoom, wep.MaxZoom)
-									surface.PlaySound("weapons/zoom.wav")
+									surface.PlaySound("weapons/zoom.mp3")
 									wep.ZoomWait = CT + 0.15
 								end
 							end

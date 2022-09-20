@@ -335,7 +335,7 @@ function SWEP:stopHoldingBreath(time, regenTime, recoilMod)
 		self.holdingBreath = false
 		self.breathWait = CurTime() + time
 		self:reduceBreathAmount(recoilMod) -- if we're aiming, reduce it by using the recoilMod variable passed on to us
-		surface.PlaySound("ins2/focus_inhale.wav")
+		surface.PlaySound("ins2/focus_inhale.mp3")
 	else
 		self.breathRegenWait = CurTime() + 0.2
 	end
@@ -444,7 +444,7 @@ function SWEP.CreateMove(move)
 							if not wep.holdingBreath and wep.BreathLeft >= wep.MinimumBreathPercentage then
 								wep.holdingBreath = true
 								wep.breathReleaseWait = CT + 0.5
-								surface.PlaySound("ins2/focus_exhale.wav")
+								surface.PlaySound("ins2/focus_exhale.mp3")
 							end
 						end
 					end

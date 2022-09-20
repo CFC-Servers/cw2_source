@@ -17,7 +17,7 @@ function ENT:Initialize()
 end
 
 function ENT:CreateParticles()
-	self:EmitSound("weapons/smokegrenade/sg_explode.wav", 100, 100)
+	self:EmitSound("weapons/smokegrenade/sg_explode.mp3", 100, 100)
 	ParticleEffect("cstm_smoke", self:GetPos(), Angle(0, 0, 0), self)
 end
 

@@ -78,9 +78,9 @@ function CustomizableWeaponry.shells:finishMaking(pos, ang, velocity, soundTime,
 	SafeRemoveEntityDelayed(ent, removetime)
 end
 
-CustomizableWeaponry:addRegularSound("CW_SHELL_MAIN", {"player/pl_shell1.wav", "player/pl_shell2.wav", "player/pl_shell3.wav"}, 65)
-CustomizableWeaponry:addRegularSound("CW_SHELL_SMALL", {"player/pl_shell1.wav", "player/pl_shell2.wav", "player/pl_shell3.wav"}, 65)
-CustomizableWeaponry:addRegularSound("CW_SHELL_SHOT", {"weapons/fx/tink/shotgun_shell1.wav", "weapons/fx/tink/shotgun_shell2.wav", "weapons/fx/tink/shotgun_shell3.wav"}, 65)
+CustomizableWeaponry:addRegularSound("CW_SHELL_MAIN", {"player/pl_shell1.mp3", "player/pl_shell2.mp3", "player/pl_shell3.mp3"}, 65)
+CustomizableWeaponry:addRegularSound("CW_SHELL_SMALL", {"player/pl_shell1.mp3", "player/pl_shell2.mp3", "player/pl_shell3.mp3"}, 65)
+CustomizableWeaponry:addRegularSound("CW_SHELL_SHOT", {"weapons/fx/tink/shotgun_shell1.mp3", "weapons/fx/tink/shotgun_shell2.mp3", "weapons/fx/tink/shotgun_shell3.mp3"}, 65)
 
 CustomizableWeaponry.shells:addNew("mainshell", "models/weapons/rifleshell.mdl", "CW_SHELL_MAIN")
 CustomizableWeaponry.shells:addNew("smallshell", "models/weapons/shell.mdl", "CW_SHELL_SMALL")

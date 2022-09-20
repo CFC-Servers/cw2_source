@@ -47,7 +47,7 @@ function ENT:PhysicsCollide(data, physobj)
 		CT = CurTime()
 		
 		if CT > self.NextImpact then
-			self:EmitSound("weapons/smokegrenade/grenade_hit1.wav", 75, 100)
+			self:EmitSound("weapons/smokegrenade/grenade_hit1.mp3", 75, 100)
 			self.NextImpact = CT + 0.1
 		end
 	end
@@ -74,7 +74,7 @@ function ENT:Fuse(t)
 			local traceZ = trace.HitPos.z
 			finishPos.z = traceZ
 			
-			self:EmitSound("weapons/flashbang/flashbang_explode2.wav", 85, 100)
+			self:EmitSound("weapons/flashbang/flashbang_explode2.mp3", 85, 100)
 			
 			for key, obj in ipairs(player.GetAll()) do
 				if obj:Alive() then

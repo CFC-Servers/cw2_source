@@ -56,7 +56,7 @@ function ENT:PhysicsCollide(data, physobj)
 		util.Effect("Explosion", ef)
 		self:Remove()
 	else
-		self:EmitSound("physics/metal/metal_grenade_impact_hard" .. math.random(1, 3) .. ".wav", 80, 100)
+		self:EmitSound("physics/metal/metal_grenade_impact_hard" .. math.random(1, 3) .. ".mp3", 80, 100)
 		self.dt.Misfire = true
 		SafeRemoveEntityDelayed(self, 10)
 		
